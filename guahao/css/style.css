@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.clearfixed::before,.clearfixed::after{
+    content: '';
+    display: table;
+}
+.clearfixed::after{
+    clear: both;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 页眉 */
+.top{
+    background: #f5f5f5;
+    height: 30px;
+}
+.tel{
+    width: 175px;
+    height: 30px;
+    font-size: 13px;
+    padding-left: 20px;
+    background: url(../img/icon-call.png) no-repeat;
+    line-height: 30px;
+    background-position-y: 5px;
+}
+.welcome li{
+    float: left;
+    padding-left: 10px;
+}
+.tel{
+    float: left;
+} 
+.welcome{
+    width: 343px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    font-size: 13px;
+} 
+/* header部分 */
+    /* logo部分 */
+header{
+    height: 92px;
+}
+.logo{
+    width: 402px;
+    height: 74px;
+    float: left;
+    margin-top: 10px;
+    overflow: hidden;
+}
+    /* 搜索框 */
+.search{
+    width: 318px;
+    height: 38px;
+    float: right;
+    padding-top: 20px;
+}
+.search form{
+    margin-top: 5px;
+}
+.search select{
+    float: left;
+    width: 70px;
+    height: 38px;
+    border: 0;
+    background: url(../img/ui-search.jpg) no-repeat;
+    outline: none;
+}
+.search input{
+    box-sizing: border-box;
+    height: 38px;
+    float: left;
+    border: 0;
+    outline: none;
+}
+.search input[type='text']{
+    width: 208px;
+    background: url(../img/ui-search.jpg) no-repeat;
+    background-position: -70px 0;
+    border-radius: 1px 0 0 1px;
+}
+.search input[type='submit']{
+    width: 40px;
+    background: url(../img/ui-search.jpg) no-repeat;
+    background-position: -290px 0;
+    border-radius: 0 1px 1px 0;
+}
+/* nav */
+nav{
+    background: skyblue;
+    height: 36px;
+}
+    /* 科室 */
+.keshi{
+    width: 190px;
+    height: 36px;
+    background: #1FA4F0;
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+}
+    /* 挂号分类 */
+.guahao{
+    width: 440px;
+    height: 36px;
+    float: left;
+}
+.guahao li{
+    width: 110px;
+    height: 36px;
+    float: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 36px;
+}
+    /* 知名医院 */
+.other{
+    width: 126px;
+    height: 36px;
+    float: right;
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 36px;
+}
+/* bnner部分 */
+.banner{
+    height: 423px;
+    width: 1000px;
+}
+.banner-left{
+    width: 190px;
+    height: 423px;
+    background: #1FA4F0;
+    float: left;
+}
+.banner-left .neike,.waike{
+    width: 177px;
+    height: 22px;
+    font-size: 12px;
+    padding: 8px 5px 9px 6px;
+    margin-left: 2px;
+}
+    /* 科室 */
+.ke-left{
+    float: left;
+    width: 26px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 30px;
+    background: url(../img/icon-menu.jpg) no-repeat;
+    background-position: -22px 0;
+    color: #fff;
+}
+.ke-left a{
+    color: #fff;
+}
+.ke-right{
+    float: right;
+    height: 22px;
+    line-height: 22px;
+}
+.ke-right a{
+    padding-left: 5px;
+    color: #fff;
+}
+    /* 轮播图 */
+.banner-center{
+    width: 544px;
+    height: 423px;
+    float: left;
+    margin: 9px 0 0 8px;;
+    position: relative;
+}
+.lunbo-left div{
+    width: 40px;
+    height: 40px;
+    background: url(../img/ui-slider-arrow.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+.lunbo-right div{
+    width: 40px;
+    height: 40px;
+    background: url(../img/ui-slider-arrow.png) no-repeat;
+    background-position: 40 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+.banner-center li{
+    width: 10px;
+    height: 10px;
+    float: left;
+    background: #ccc;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+.banner-center ul{
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    bottom: 30px;
+}
+    /* banner右侧 */
+.banner-right{
+    width: 248px;
+    height: 423px;
+    margin: 9px 0 0 8px;
+    float: left;
+}
+.yuyue{
+    width: 250px;
+    height: 255px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.yuyue-top{
+    width: 64px;
+    height: 22px;
+    background: url(../img/icon-help.png) no-repeat;
+    padding-left: 25px;
+    margin: 15px auto;
+    color: #fec009;
+}
+.yuyue select{
+    width: 170px;
+    height: 26px;
+    margin: 0 auto 9px;
+    display: block;
+}
+.yuyue input{
+    width: 108px;
+    height: 33px;
+    background: #fecd09;
+    border: 1px solid  #fecd09;
+    border-radius: 1px;
+    margin: 20px auto;
+    display: block;
+    color: #fff;
+}
+    /* 帮助中心 */
+.bangzhu{
+    width: 250px;
+    height: 146px;
+    background: #f5f5f5;
+    margin-top: 12px;
+}
+.bangzhu-top{
+    width: 64px;
+    height: 22px;
+    margin: 15px auto;
+    color: #1FA4F0;
+    background: url(../img/icon-help.png) no-repeat;
+    background-position: 0 -25px;
+    padding-left: 25px;
+}
+.bangzhu a{
+    color: #1FA4F0;
+    margin: 8px 29px;
+    font-size: 13px;
+    display: inline-block;
+}
+/* content */
+.content{
+    /* background: pink; */
+    height: 538px;
+    margin-top: 10px;
+}
+.content-top{
+    width: 742px;
+    height: 34px;
+    background: #f5f5f5;
+}
+.content-top a{
+    width: 112px;
+    height: 34px;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    background: #1FA4F0;
+    color: #fff;
+}
+    /* content主要部分 */
+.content-block{
+    width: 732px;
+    height: 454px;
+    /* background: purple; */
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.content-left{
+    float: left;
+}
+    /* 各区域医院 */
+.quyu{
+    width: 732px;
+    height: 43px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 43px;
+    /* background: purple; */
+    box-sizing: border-box;
+}
+.quyu li{
+    height: 43px;
+    line-height: 43px;
+    float: left;
+    padding: 0px 10px;
+    /* color: #555; */
+    /* box-sizing: border-box; */
+    font-size: 12px;
+}
+.quyu li:hover{
+    background: #1fa4f0;
+    color: #fff;
+}
+    /* 医院1 */
+.yiyuan1{
+    width: 732px;
+    height: 220px;
+}
+.yiyuan1 li{
+    display: block;
+    width: 356px;
+    height: 112px;
+    float: left;
+}
+.yiyuan1 li .img-left{
+    float: left;
+}
+.yiyuan1 li .img-right{
+    float: right;
+    font-size: 12px;
+    width: 220px;
+    padding-top: 20px;
+}
+.yiyuan1 li .img-right div:first-child{
+    color: #1fa4f0;
+    font-size: 15px;
+}
+.img-right div:first-child span{
+    float: right;
+    color: #000;
+    font-size: 11px;
+    display: block;
+}
+.img-right div{
+    margin-bottom: 5px;
+}
+    /* 医院2 */
+.yiyuan2{
+    width: 732px;
+    height: 100px;
+    /* background: #000; */
+}    
+.yiyuan2 li{
+    /* display: inline-block; */
+    width: 356px;
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.yiyuan2 span{
+    float: right;
+}
+    /* content右部分 */
+.content-right{
+    float: right;
+}
+    /* 最新公告 */
+.news{
+    width: 250px;
+    height: 238px;
+}
+.news dt{
+    width: 250px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 15px;
+    background: #f5f5f5;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.news dt span{
+    float: right;
+    display: block;
+    width: 50px;
+    height: 37px;
+    padding-right: 22px;
+    box-sizing: border-box;
+    font-size: 12px;
+}  
+.news dd{
+    width: 193px;
+    height: 14px;
+    padding-left: 15px;
+    margin-left: 15px;
+    background: url(../img/list-yellow.jpg) no-repeat;
+    font-size: 11px;
+    margin-top: 18px;
+    /* line-height: 29px; */
+}
+.news dd:nth-child(2){
+    background-position: 0 -0px;
+}
+.news dd:nth-child(3){
+    background-position: 0 -29px;
+}
+.news dd:nth-child(4){
+    background-position: 0 -58px;
+}
+.news dd:nth-child(5){
+    background-position: 0 -87px;
+}
+.news dd:nth-child(6){
+    background-position: 0 -116px;
+}
+.news dd:nth-child(7){
+    background-position: 0 -145px;
+}
