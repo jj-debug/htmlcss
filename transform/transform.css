@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+.cai{
+    margin: 100px auto;
+    position: relative;
+    width: 400px;
+    perspective: 600px;             /* 父元素添加透视，使获得3D旋转效果 */
+}
+.left,.right{
+    width: 200px;
+    height: 300px;
+    background: red;
+}
+.left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:all 0.2s;            /* 未所有变形添加过渡，完成整个变形需要0.2s */
+    transform-origin: left;         /* 将翻转的基线设为左 */
+}
+.right{
+    position: absolute;
+    left: 200px;
+    top: 0;  
+    transition:all 0.2s;            /* 未所有变形添加过渡，完成整个变形需要0.2s */
+    transform-origin: right;        /* 将翻转的基线设为左 */
+}
+.cai:hover .left{
+    transform: rotateY(-135deg);     /* 鼠标经过.cai时.left以Y轴向左翻转135度 */
+}
+.cai:hover .right{
+    transform: rotateY(135deg);    /* 鼠标经过.cai时.right以Y轴向右翻转135度 */
+}
