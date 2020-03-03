@@ -3,7 +3,7 @@
     margin: 0;
   }
 .cai{
-    margin: 100px auto;
+    margin: 50px auto 0;
     position: relative;
     width: 400px;
     perspective: 600px;             /* 父元素添加透视，使获得3D旋转效果 */
@@ -28,8 +28,36 @@
     transform-origin: right;        /* 将翻转的基线设为左 */
 }
 .cai:hover .left{
-    transform: rotateY(-135deg);     /* 鼠标经过.cai时.left以Y轴向左翻转135度 */
+    transform: rotateY(-135deg);    /* 鼠标经过.cai时.left以Y轴向左翻转135度 */
 }
 .cai:hover .right{
-    transform: rotateY(135deg);    /* 鼠标经过.cai时.right以Y轴向右翻转135度 */
+    transform: rotateY(135deg);     /* 鼠标经过.cai时.right以Y轴向右翻转135度 */
+}
+
+/* 鸣人和雏田 */
+.huoying{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    margin: 50px auto 0;
+    perspective: 600px;             /* 父元素添加透视，使获得3D旋转效果 */
+}
+.naruto{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;           /* 未所有变形添加过渡，完成整个变形需要0.5s */
+}
+.hinata{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;           /* 未所有变形添加过渡，完成整个变形需要0.5s */
+}
+.huoying:hover .naruto{
+    transform: rotateY(-180deg);    /* 鼠标经过.huoying盒子时鸣人旋转180度 */
+}
+.huoying:hover .hinata{
+    transform: rotateY(-180deg);    /* 鼠标经过.huoying盒子时雏田也旋转180度 */
+    z-index: 1;                     /* 并且雏田开始出现在盒子最上层 */
 }
