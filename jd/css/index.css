@@ -1,0 +1,127 @@
+.grid{
+    height: 480px;
+    margin-top: 10px;
+}
+.col1{
+    width: 190px;
+    height: 100%;
+    overflow: hidden;
+}
+.col1 ul{
+    padding: 10px 0;
+}
+.col1 li{
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+}
+.col1 li:hover{
+    background: #ccc;
+}
+.col1 a{
+    font-size: 14px;
+    color: #333;
+}
+.col1 span{
+    padding: 0 2px;
+}
+.col2{
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+.col2-top{
+    height: 340px;
+    position: relative;
+}
+.col2 ul{
+    position: absolute;
+    bottom: 0;
+
+}
+.col2 li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #999;
+    margin-right: 5px;
+}
+.col2 .col-l,.col-r{
+    font-family: 'icomoon';
+    font-size: 20px
+}
+.col2 .col-l{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.col2 .col-r{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+
+
+.col3{
+    width: 190px;
+    height: 100%;
+}
+.col3 .login{
+    width: 100%;
+    height: 35px;
+    background: pink;
+    padding-top: 67px;
+    position: relative;
+    text-align: center;
+}
+.login .huanyin{
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+.login .huanyin .left{
+    width: 44px;
+    height: 44px;
+}
+.login .huanyin .left img{
+    display: inline-block;
+    border-radius: 50%;
+}
+.login .huanyin .right{
+    font-size: 10px;
+    padding: 10px 0 0 10px;
+}
+.login .huanyin .right a{
+    color: #000;
+}
+.login .huanyin .right span{
+    padding: 0 3px;
+}
+.login>a{
+    background: #f10;
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    border-radius: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.login>a:last-child{
+    background: #000;
+    color: #fff;
+}
+
+.col3 .kuaibao{
+    width: 100%;
+    height: 130px;
+    background: purple;
+}
+.col3 .huafei{
+    width: 100%;
+    height: 238px;
+    background: hotpink;
+}

@@ -1,0 +1,296 @@
+ul,h1,body{
+    margin: 0;
+    padding: 0;
+}
+.w{     /* 版心的公共类 */
+    width: 1190px;
+    margin: 0 auto;
+}
+.fl{    /* 左浮动的公共类 */
+    float: left;
+}
+.fr{    /* 右浮动的公共类 */
+    float: right;
+}
+ul{
+    list-style: none;   /* 清除列表的小圆点 */
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;  /* a标签清除下划线 */
+    font-size: 12px;
+    color: #999;
+}
+a:hover{
+    color: #e33333;
+}
+.f10{
+    color: #f10215;
+}
+i{
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* header */
+header{
+    height: 80px;
+    background: black;
+}
+/* 快速导航栏 */
+.shortcut{
+    height: 30px;
+    line-height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+.city{
+    padding: 0 7px;
+    /* padding-left: 50px; */
+}
+.shortcut li{
+    float: left;
+    padding: 0 7px;
+}
+.shortcut .space{
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 11px 5px 0;
+    padding: 0;
+}
+.mobile{
+    position: relative;
+}
+.mobile img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    top: 23px;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+/* header结束 */
+/* 中间头部分 */
+.middle{
+    height: 140px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+}
+.logo a{
+    display: block;
+    width: 190px;
+    height: 120px;
+    background: #fff url(../images/logo.png) no-repeat;
+}
+/* 搜索部分 */
+.form{
+    width: 550px;
+    height: 36px;
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    box-sizing: border-box;
+}
+.form input{
+    width: 492px;
+    height: 36px;
+    padding: 2px 44px 2px 17px;
+    box-sizing: border-box;
+    border: 2px solid #f10215;
+    outline: none;
+    float: left;
+    font-size: 12px;
+}
+.form button{
+    width: 58px;
+    height: 36px;
+    background: #f10215;
+    border: 0;
+    float: left;
+    outline: none;
+}
+.form button i{
+    font-size: 17px;
+}
+.shopCar{
+    width: 136px;
+    height: 36px;
+    position: absolute;
+    right: 230px;
+    top: 25px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    line-height: 36px;
+    text-align: center;
+}
+.shopCar i{
+    font-size: 16px;
+    margin-right: 13px;;
+}
+.shopCar span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f10;
+    position: absolute;
+    left: 29px;
+    top: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+/* 热搜词 */
+.hotword{
+    width: 550px;
+    height: 20px;
+    position: absolute;
+    left: 260px;
+    top: 65px;
+    line-height: 20px;
+}
+/* 小导航栏 */
+.navitems{
+    height: 40px;
+    padding-top: 20px;
+    position: absolute;
+    left: 203px;
+    bottom: 0;
+}
+.navitems li{
+    float: left;
+}
+.navitems li a{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 11px;
+}
+/* 爆品 */
+.treasure{
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.treasure a{
+    width: 190px;
+    height: 120px;
+    display: block;
+    background: url(../images/baopin.png) no-repeat;
+}
+/* 头部结束 */
+/* 底部开始 */
+footer{
+    height: 500px;
+}
+.service{
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+.service ul{
+    height: 42px;
+    line-height: 42px;
+}
+.service li{
+    float: left;
+    width: 297px;
+}
+.service h5,p{
+    padding: 0;
+    margin: 0;
+}
+.service .unit{
+    height: 42px;
+    margin: 0 36px;
+    padding-left: 45px;
+    position: relative;
+}
+.service h5{
+    width: 36px;
+    height: 42px;
+    background: url(../images/ico.png);
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.service li:nth-child(2) h5{
+    background-position: 0 -43px;
+}
+.service li:nth-child(3) h5{
+    background-position: 0 -86px;
+}
+.service li:nth-child(4) h5{
+    background-position: 0 -129px;
+}
+.service p{
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+}
+/* 底部帮助部分 */
+footer .help{
+    padding: 20px 0;
+}
+footer .help-list{
+    height: 160px;
+}
+footer .help-nav{
+    width: 198px;
+    float: left;
+}
+footer .help-nav h5{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+footer .help-over{
+    width: 200px;
+    float: left;
+}
+footer .help-over h5{
+    text-align: center;
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+footer .help-over div{
+    padding: 0 10px;
+}
+footer .help-over p{
+    font-size: 12px;
+    color: #999;
+}
+footer .help-over p:last-child{
+    float: right;
+}
+
+/* 底部帮助结束 */
+.copyright{
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    height: 262px;
+}
+.about ul{
+    width: 1007px;
+    height: 18px;
+    margin: 0 auto;
+}
+.about li{
+    float: left;
+}
+.about .space{
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 8px 10px 0;
+    padding: 0;
+}
