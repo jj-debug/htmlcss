@@ -56,8 +56,57 @@
 }
 .huoying:hover .naruto{
     transform: rotateY(-180deg);    /* 鼠标经过.huoying盒子时鸣人旋转180度 */
+    backface-visibility: hidden;
 }
 .huoying:hover .hinata{
     transform: rotateY(-180deg);    /* 鼠标经过.huoying盒子时雏田也旋转180度 */
-    z-index: 1;                     /* 并且雏田开始出现在盒子最上层 */
+    /* z-index: 1;                     并且雏田开始出现在盒子最上层 */
+}
+
+
+/* 中国 */
+body{
+    /* perspective: 1000px; */
+}
+.yigezhongguo{
+    height: 200px;
+    width: 350px;
+    margin: 100px auto;
+    background: url(img/hongqi.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: 5s;
+}
+.yigezhongguo:hover{
+    transform: rotateY(360deg);
+}
+.yigezhongguo div{
+    height: 100%;
+    width: 100%;
+    background: url(img/China.jfif) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.yigezhongguo div:nth-child(1){
+    transform: rotateY(0deg) translateZ(400px);
+    /* z-index: 1; */
+}
+.yigezhongguo div:nth-child(2){
+    transform: rotateY(60deg) translateZ(400px);
+}
+.yigezhongguo div:nth-child(3){
+    transform: rotateY(120deg) translateZ(400px);
+}
+.yigezhongguo div:nth-child(4){
+    transform: rotateY(180deg) translateZ(400px);
+}
+.yigezhongguo div:nth-child(5){
+    transform: rotateY(240deg) translateZ(400px);
+}
+.yigezhongguo div:nth-child(6){
+    transform: rotateY(300deg) translateZ(400px);
 }

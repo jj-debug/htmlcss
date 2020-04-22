@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            position: absolute;
+            left: 0;
+        }
+        li{
+            list-style: none;
+            width: 100px;
+            height: 30px;
+        }
+        .nav>li{
+            float: left;
+        }
+        .nav ul{
+            display: none;
+        }
+        .container{
+            width: 800px;
+            margin: 0 auto;
+        }
+        header{
+            background: #ccc;
+            height: 100px;
+        }
+        nav{
+            background: pink;
+            height: 30px;
+        }
+        .banner{
+            background: purple;
+            height: 2000px;
+        }
+        span{
+            position: fixed;
+            background: hotpink;
+            height: 100px;
+            width: 30px;
+            right: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>揍你</button>
+    <ul class="nav">
+        <li>
+            <a href="">机电</a>
+            <ul>
+                <li><a href="#">汽修</a></li>
+                <li><a href="#">汽修</a></li>
+                <li><a href="#">汽修</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">师范</a>
+            <ul>
+                <li><a href="#">汽修</a></li>
+                <li><a href="#">汽修</a></li>
+                <li><a href="#">汽修</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">信息</a>
+            <ul>
+                <li><a href="#">汽修</a></li>
+                <li><a href="#">汽修</a></li>
+                <li><a href="#">汽修</a></li>
+            </ul>
+        </li>
+    </ul>
+ 
+    <header class="container">头部</header>
+    <span>
+        回到顶部
+    </span>
+    <nav class="container">导航栏</nav>
+    <div class="banner container"></div>
+    <script src="except.js"></script>
+    <script>
+        var nav = document.querySelector('.nav');
+        var lis = nav.children;
+        // console.log(lis);
+        
+        for(var i = 0;i < lis.length;i++){
+            lis[i].onmouseover = function(){
+                this.children[1].style.display = 'block';
+            }
+            lis[i].onmouseout = function(){
+                this.children[1].style.display = 'none';
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+nav{
+    width: 50%;
+    height: 400px;
+    background: pink;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    border-radius: 10px;
+    border-radius: 5px;
+}
+section>div{
+    flex:1;
+    margin: 0 2px 2px 0;
+}
+section div:first-child{
+    /* width: 25%; */
+    height: 100px;
+    background: purple;
+    border-radius: 5px 0 0 5px;
+}
+section div:nth-child(2){
+    height: 100px;
+    background: hotpink;
+}
+section div:last-child{
+    /* width: 25%; */
+    height: 100px;
+    background: skyblue;
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+}
+.two{
+    display:flex;
+    flex-direction: column;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+}

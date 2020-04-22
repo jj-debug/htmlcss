@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 13px;
+}
+a:hover{
+    color: orange;
+}
+.w{
+    width: 1120px;
+    margin: auto;
+}
+.w0{
+    width: 990px;
+    margin: auto;
+}
+/* top开始 */
+.top{
+    height: 36px;。
+    background: #ccc;
+}
+.top li{
+    float: left;
+    padding: 0 15px;
+}

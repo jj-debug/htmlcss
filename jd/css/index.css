@@ -25,21 +25,38 @@
 .col1 span{
     padding: 0 2px;
 }
+
 .col2{
     width: 790px;
     height: 100%;
     margin-left: 10px;
 }
 .col2-top{
-    height: 340px;
+    height: 344px;
     position: relative;
+    /* overflow: hidden; */
 }
-.col2 ul{
+
+/* 被点击的小圆圈 */
+.current{
+    background: #fff ! important;
+    
+}
+.col2-top ul{
+    width: 500%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.col2-top ul li{
+    float: left;
+}
+.col2-top ol{
     position: absolute;
     bottom: 0;
-
+    list-style:none;
 }
-.col2 li{
+.col2-top ol li{
     float: left;
     width: 12px;
     height: 12px;
@@ -49,7 +66,13 @@
 }
 .col2 .col-l,.col-r{
     font-family: 'icomoon';
-    font-size: 20px
+    display: none;
+}
+.col-l a{
+    font-size: 20px;
+}
+.col-r a{
+    font-size: 20px;
 }
 .col2 .col-l{
     position: absolute;
