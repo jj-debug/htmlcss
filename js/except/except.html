@@ -45,9 +45,13 @@
             right: 0;
             display: none;
         }
+
+        /* tab切换栏 */
+        
     </style>
 </head>
 <body>
+    <!-- 移动动画 -->
     <button>揍你</button>
     <ul class="nav">
         <li>
@@ -78,12 +82,21 @@
  
     <header class="container">头部</header>
     <span>
-        回到顶部
+    <!-- 回到顶部 -->
     </span>
     <nav class="container">导航栏</nav>
     <div class="banner container"></div>
+
+    <!-- 记住账号 -->
+    <form action="">
+        <input type="text" id="username">
+        <input type="checkbox" name="" id="remember">记住账号
+    </form>
+
+
     <script src="except.js"></script>
     <script>
+        // 回到顶部的显示与隐藏
         var nav = document.querySelector('.nav');
         var lis = nav.children;
         // console.log(lis);
@@ -97,6 +110,23 @@
             }
         }
         
+
+        // 记住账号
+        var username = document.querySelector('#username');
+        var remember = document.querySelector('#remember');
+        // var val = username.nodeValue;
+        console.log(username.nodeValue)
+        if(localStorage.getItem('username')){
+            username.value = localStorage.getItem('username');
+            remember.checked = true
+        }
+        remember.addEventListener('change',function(){
+            if(this.checked){
+                localStorage.setItem('username',username.value)
+            }else{
+                localStorage.removeItem('username')
+            }
+        })
     </script>
 </body>
 </html>
